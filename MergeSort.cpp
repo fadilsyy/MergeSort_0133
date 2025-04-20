@@ -27,8 +27,8 @@ void input(){
 }
 
 void mergeSort(int low, int high){
-    if (low >= high){   //step 1
-        return;         //step 1.a
+    if (low >= high){ 
+        return;
     } 
 
     int mid = (low + high) / 2; //step 2
