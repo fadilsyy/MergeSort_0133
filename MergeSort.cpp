@@ -4,15 +4,19 @@ using namespace std;
 int arr[20], B[20];
 int n;
 
-void input(){
-    while (true){
+void input()
+{
+    while (true)
+    {
         cout << "Masukkan Panjang Element Array : ";
         cin >> n;
 
-        if (n <= 20){
+        if (n <= 20)
+        {
             break;
         }
-        else{
+        else
+        {
             cout << "\nMaksimal Panjang Array Adalah 20" << endl;
         }
     }
@@ -20,14 +24,17 @@ void input(){
     cout << "\nInputkan Isi Element array" << endl;
     cout << "\n--------------------------" << endl;
 
-    for (int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         cout << "Array Index Ke- " << i << " : ";
         cin >> arr[i];
     }
 }
 
-void mergeSort(int low, int high){
-    if (low >= high){ 
+void mergeSort(int low, int high)
+{
+    if (low >= high)
+    { 
         return;
     } 
 
@@ -42,11 +49,13 @@ void mergeSort(int low, int high){
     
     while (i <= mid && j <= high)
     {
-        if (arr[i] <= arr[j]){
+        if (arr[i] <= arr[j])
+        {
             B[k] = arr[i];
             i++;
         } 
-        else{
+        else
+        {
             B[k] = arr[j];
             j++;
         }
